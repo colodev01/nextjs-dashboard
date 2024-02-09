@@ -5,6 +5,11 @@ import LatestInvoices from '../ui/dashboard/latest-invoices';
 import RevenueChart from '../ui/dashboard/revenue-chart';
 import RevenueChartSkeleton, { LatestInvoicesSkeleton } from '../ui/skeletons';
 import { lusitana } from '../ui/fonts';
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Home',
+};
 
 export default async function DashboardPage() {
   const {
